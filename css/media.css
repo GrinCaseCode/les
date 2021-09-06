@@ -193,6 +193,8 @@ body {
 }
 }
 
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
@@ -239,4 +241,9 @@ body {
 	.container {
     max-width: 1620px;
 }
+}
+@media (min-width: 1940px) {
+	.billbord {
+		background-position: center top;
+	}
 }
