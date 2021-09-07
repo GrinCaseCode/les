@@ -425,9 +425,10 @@ body {
 		white-space: nowrap;
 	}
 	.tabs a {
-		padding: 10px 17px;
+		padding: 10px 23px;
 		border: none;
 		box-shadow: none;
+		width: initial;
 		height: auto;
 		margin: 0;
 	} 
