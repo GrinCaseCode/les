@@ -76,14 +76,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			settings: {
 				arrows: false,
 			}
-		}
+		} 
 		]
 	});
 
 	$('.slider-billbord').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		slidesToShow:3,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',

@@ -422,7 +422,7 @@ body {
 		flex-wrap: nowrap;
 		background-color: #fff;
 		margin-right: -15px;
-		white-space: nowrap;
+		white-space: nowrap; 
 	}
 	.tabs a {
 		padding: 10px 23px;
