@@ -25,7 +25,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
+		if ($(".menu").is(":hidden")) { 
 			$(".menu").slideDown(200);
 		} else {
 			$(".menu").slideUp(200);
