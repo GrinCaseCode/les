@@ -881,7 +881,7 @@ transform: scale(1.5);
 .income-block__value {
     font-size: 54px;
 }
-.income-block__descr {
+.income-block__descr { 
     font-size: 19px;
 }
 .income {
