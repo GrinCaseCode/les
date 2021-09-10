@@ -7,7 +7,7 @@
 .descr-big {
     font-size: 20px;
     padding-top: 15px;
-    line-height: 32px;
+    line-height: 32px; 
     max-width: 515px;
 }
     .billbord__buttons {
@@ -19,6 +19,9 @@
 .billbord__bottom {
 	max-width: 1200px;
 }
+.gift::before,
+.infrastructure::after,
+.section-bottom::after,
 .gallery::after,
 .gallery::before,
 .billbord::before,
@@ -26,10 +29,12 @@
     transform: scale(0.7);
     transform-origin: 100% 100%;
 }
+
 .gallery::before, 
 .billbord::before {
     transform-origin: 0 0;	
 }
+
 .item-environment__title {
     font-size: 17px;
     line-height: 23px;
@@ -53,6 +58,31 @@
 .descr-section {
     font-size: 21px;
     }
+    .slider-controls .slick-prev {
+	left: 428px;
+}
+.slider-controls .slick-next {
+	right: 428px;
+}
+.gift::before {
+	    transform-origin: 100% 0%;	
+}
+.gift .form-page .title-middle {
+	font-size: 20px;
+}
+.layout-block {
+	transform: scale(0.8);
+		    transform-origin: 50% 0%;	
+}
+.layout-wrap {
+	margin-bottom: -100px;
+}
+.controls-for .slick-prev {
+    left: -80px;
+}
+.controls-for .slick-next {
+    right: -80px;
+}
 }
 @media only screen and (max-width : 1500px) {
 .title-big {
@@ -132,10 +162,10 @@
 	max-width: 992px;
 }
 .slider-controls .slick-prev {
-    left: 65px;
+    left: 72px;
 }
 .slider-controls .slick-next {
-    right: 65px;
+    right: 72px;
 }
 .tour .title-section {
     font-size: 34px;
@@ -167,6 +197,32 @@
     .phone-main {
     font-size: 16px;
 }
+
+.section-bottom::after {
+	    transform-origin: 100% 0;
+}
+.image-mockup img {
+	max-width: 1300px;
+}
+.image-mockup {
+    margin-left: -362px;
+    top: -140px;
+    }
+    .gift::before {
+    	transform: scale(0.6);
+    }
+    .location {
+    	margin-bottom: -20px;
+    }
+    .slider-nav__item {
+    height: 168px;
+}
+.income__laptop img {
+	max-width: 800px;
+}
+.income__laptop {
+    margin-left: -119px;
+}
 }
 
 
@@ -181,7 +237,7 @@ body {
 .title-big {
     font-size: 36px;
 }
-.gallery::after, .gallery::before, .billbord::before, .billbord::after {
+.section-bottom::after, .gallery::after, .gallery::before, .billbord::before, .billbord::after {
     transform: scale(0.5);
 }
 .tour .title-section {
@@ -191,6 +247,18 @@ body {
 .footer__bottom {
 	font-size: 13px;
 }
+.section-bottom::after {
+	top: 33px;
+}
+.gift::before {
+    transform: scale(0.5);
+}
+.list-check {
+    font-size: 20px;
+}
+.location .descr-section, .location .title-section {
+    max-width: 850px;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -246,6 +314,57 @@ body {
 }
 .form-page .row > div {
     padding: 0 5px;
+}
+.gift::before {
+	top: 20px;
+    transform: scale(0.4);
+}
+.gift .title-section {
+	margin-bottom: 30px;
+}
+.gift__center {
+	margin-bottom: 20px;
+}
+.gift {
+	padding-bottom: 100px;
+}
+.location-map {
+	transform: scale(0.8);
+		    transform-origin: 100% 0;
+		    margin-bottom: -140px;
+}
+.location-map::after {
+transform: scale(1.5);
+}
+.location .descr-section::after, .location .descr-section::before {
+	display: none;
+}
+.layout-block {
+    transform: scale(0.5);
+    transform-origin: 50% 0%;
+}
+.layout-wrap {
+	margin-top: 30px;
+    margin-bottom: -400px;
+}
+.row_facilities > div {
+	padding: 0 15px;
+}
+.row_facilities {
+	margin: 0 -15px;
+}
+.income-block__title {
+    font-size: 39px;
+    }
+    .income-block__value {
+    font-size: 77px;
+}
+.income-block__descr {
+	font-size: 29px;
+}
+.income-block {
+	height: 480px;
+	width: 275px;
 }
 }
 
@@ -348,6 +467,62 @@ body {
     height: 61px;
 	font-size: 16px;
 }
+.section-bottom::after {
+    top: -66px;
+}
+.image-mockup,
+.gift::before {
+	display: none;
+}
+.location-map {
+    transform: scale(0.7);
+    transform-origin: 100% 0;
+    margin-bottom: -254px;
+}
+.location-map::after {
+	display: none;
+}
+.slider-for {
+	margin-right: 0;
+}
+.slider-nav {
+	margin: 0 -6px;
+	margin-top: 10px;
+}
+.slider-nav__item {
+	height: 150px;
+	margin: 0 6px;
+}
+.sliders-design {
+	padding: 11px;
+}
+.slider-for__item {
+    height: 430px;
+    }
+    .tab-container {
+    padding-top: 34px;
+}
+.income__laptop img {
+    max-width: 586px;
+}
+.income {
+	padding-bottom: 80px;
+}
+.gift {
+    padding-bottom: 44px;
+}
+.layout-modal__image {
+	height: 430px;
+}
+.layout-modal__bottom {
+	padding-top: 10px;
+}
+.layout-modal__bottom .btn-main {
+	margin-bottom: 20px;
+}
+.layout-modal {
+	top: 0;
+}
 }
 
 /* Small Devices, Tablets */
@@ -367,7 +542,7 @@ body {
 .item-billbord {
 	width: 350px;
 }
-.gallery::after, .gallery::before, .billbord::before, .billbord::after {
+.infrastructure::after, .section-bottom::after, .gallery::after, .gallery::before, .billbord::before, .billbord::after {
 	display: none;
 }
 .billbord {
@@ -536,6 +711,100 @@ body {
     .footer__content {
     	padding-top: 15px;
     }
+    .list-check {
+    font-size: 17px;
+}
+.gift__center {
+	display: block;
+}
+.location-map {
+    transform: scale(0.4);
+    transform-origin: 51% 10%;
+    margin-bottom: 0;
+}
+.location-map:::after {
+	display: block;
+}
+.location-map {
+	    margin-bottom: -443px;
+}
+.item-location__content {
+    transform: scale(1.4);
+    transform-origin: 162% 90%;
+}
+.item-location {
+	z-index: 3;
+}
+.location::after {
+	height: 1470px;
+}
+.logo-title {
+	margin-bottom: 25px;
+}
+.layout-block {
+    transform: scale(0.3);
+    transform-origin: 50% 0%;
+}
+.layout-wrap {
+    margin-bottom: -580px;
+}
+.title-section sup {
+    font-size: 16px;
+}
+.slider-nav__item {
+    height: 105px;
+}
+.row_facilities > div {
+	margin-top: 25px;
+}
+.income-block {
+	margin: 0 auto;
+	width: 300px;
+}
+.income .btn-main {
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.income__laptop {
+	display: none;
+}
+.income {
+	padding-bottom: 0;
+}
+.doc-item {
+	display: none;
+}
+.gift {
+	padding-top: 40px;
+}
+.layout-modal__image {
+    height: 310px;
+    margin-bottom: 20px;
+}
+.layout-modal__title {
+    font-size: 20px;
+    padding-bottom: 11px;
+    }
+    .layout-modal__area strong {
+    font-size: 16px;
+}
+.layout-modal__area {
+	margin-bottom: 15px;
+}
+.layout__feature {
+	margin-bottom: 10px;
+}
+.row_facilities {
+	margin-right: -15px;
+}
+.row_facilities .slick-track {
+    display: flex !important;
+}
+.row_facilities .slick-slide {
+	width: 300px;
+	display: flex;
+    height: inherit !important;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -577,6 +846,65 @@ body {
 }
 .title-section {
     font-size: 24px;
+}
+.layout-block {
+    transform: scale(0.23);
+    transform-origin: 50% 0%;
+}
+.layout-wrap {
+	margin-bottom: -650px;
+}
+.slider-for__item {
+    height: 287px;
+}
+.slider-nav__item {
+    height: 78px;
+}
+.facilities {
+	padding-top: 40px;
+	padding-bottom: 45px;
+}
+.income-block {
+	padding-top: 20px;
+	height: 335px;
+}
+.income-block__title {
+    font-size: 28px;
+}
+.income-block__title strong {
+	display: block;
+}
+.income-block__value {
+    font-size: 54px;
+}
+.income-block__descr {
+    font-size: 19px;
+}
+.income {
+	padding-top: 40px;
+}
+.list-check li {
+	margin-bottom: 20px;
+}
+.income .list-check {
+	margin-top: 30px;
+}
+.layout {
+	padding-top: 35px;
+}
+.location-map {
+	    margin-bottom: -539px;
+    transform: scale(0.27);
+    }
+    .item-location__pin {
+    transform: scale(1.5);
+}
+.item-location__content {
+    transform: scale(1.7);
+    transform-origin: 132% 106%;
+}
+.location .descr-section {
+	font-size: 14px;
 }
 }
 
