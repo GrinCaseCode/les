@@ -865,9 +865,9 @@ transform: scale(1.5);
 	padding-bottom: 45px;
 }
 .income-block {
-	padding-top: 20px;
-	height: 265px;
-	width: 335px;
+    padding-top: 20px;
+    height: 300px;
+    width: 260px;
 }
 .income .btn-main {
 	width: 300px;
