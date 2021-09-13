@@ -59,17 +59,13 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//слайдер
 
 
-	$('.slider-infrastructure').each(function(){
-		var $this = $(this),
-		$controls = $(this).parent().parent().parent().find(".controls-infrastructure");
-		$this.slick({
+$('.slider-infrastructure').slick({
 			arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow:1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-		appendArrows: $controls,
 		slidesToScroll: 1,
 			responsive: [
 		{
@@ -81,7 +77,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 		]
 		});
-	});
 
 	$('.slider-gallery').slick({
 		arrows: true,

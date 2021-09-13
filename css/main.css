@@ -1680,3 +1680,16 @@ line-height: 1.2;
 .mob-contacts {
 	display: none;
 }
+.slider-infrastructure .slick-arrow {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: auto;
+}
+.slider-infrastructure .slick-prev {
+	left: -90px;
+}
+.slider-infrastructure .slick-next {
+	right: -90px;
+}
