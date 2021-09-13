@@ -58,15 +58,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	//слайдер
 
-	$('.slider-infrastructure').slick({
-		arrows: true,
+
+	$('.slider-infrastructure').each(function(){
+		var $this = $(this),
+		$controls = $(this).parent().parent().parent().find(".controls-infrastructure");
+		$this.slick({
+			arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow:1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		appendArrows: $controls,
 		slidesToScroll: 1,
-		responsive: [
+			responsive: [
 		{
 			breakpoint: 992,
 			settings: {
@@ -75,6 +80,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			}
 		}
 		]
+		});
 	});
 
 	$('.slider-gallery').slick({
@@ -201,11 +207,23 @@ $('.row_facilities').slick('refresh');
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").hide();
+		$(this).parent().parent().parent().siblings(".tab-container").find(".tab-pane").hide();
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(200);
-
 	});
+
+
+	$('.tabs-btn').click(function() {
+	$(this).parent('.tabs-wrap').addClass("tabs-wrap_mob")
+	if ($(this).parent(".tabs-wrap").find("li:not('.active')").is(":hidden")) {
+		$(this).parent(".tabs-wrap").find("li:not('.active')").slideDown(200);
+	} else {
+		$(this).parent(".tabs-wrap").find("li:not('.active')").slideUp(200);
+	}
+	$('.tabs-btn').parent(".tabs-wrap_mob").find("li").click(function() {
+		$('.tabs-btn').parent(".tabs-wrap_mob").find("li:not('.active')").slideUp(200);
+	});
+});
 
 	$('.infrastructure .tabs li a').click(function(event) {
 
@@ -235,6 +253,12 @@ $('.row_facilities').slick('refresh');
 		$(".item-layout").removeClass('active');
 	}
 });
+
+	$('.layout-modal__close').click(function(event) {
+		event.preventDefault();
+		$(".layout-modal").fadeOut(200); 
+		$(".item-layout").removeClass('active');
+	});
 
 
 	{
